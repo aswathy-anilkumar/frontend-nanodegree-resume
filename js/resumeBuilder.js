@@ -19,7 +19,7 @@ var bio={
 bio.display=function(){
   
   
-}
+};
 
 bio.display();
 
@@ -65,7 +65,7 @@ var work = {
          "description": "Schedules the episodes and edit the videos for each episode."
     }
     ],    
-    display: function ()
+ // display :function ();
 };
   
  var projects ={
@@ -74,7 +74,7 @@ var work = {
           "dates": "2016-2017",  
           "description": "Allows users to check the availability of parking slots in the parking area and pre-book the slot using an android application",
           "url" : ""
-    }
+    },
          
     {     "title": "Payroll System for employees", 
           "dates": "2015",  
@@ -82,8 +82,8 @@ var work = {
           "url" : "",
     }
     ],
-    display: function()
-    };
+   //display function()
+};
     
     
     

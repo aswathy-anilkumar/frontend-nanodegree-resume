@@ -144,7 +144,8 @@ displayWork();
     {     "title": "Smart Car Parking system using IoT",
           "dates": "2016-2017",
           "description": "Allows users to check the availability of parking slots in the parking area and pre-book the slot using an android application",
-          "url" : ""
+          "images" : ["images/1.png"],
+     	  "url" : ""
     },
 
     {     "title": "Payroll System for employees",

@@ -9,8 +9,8 @@ h3,
 h4,
 h5,
 h6 {
-  padding:0;
-  margin:0;
+  padding: 0;
+  margin: 0;
   font-family: "Roboto", sans-serif;
 }
 
@@ -22,6 +22,7 @@ h6 {
 .work-entry,
 .project-entry {
   padding: 0 5%;
+  text-align: left;
 }
 
 h1 {
@@ -41,6 +42,7 @@ h2 {
 
 h3 {
   font-style: italic;
+  text-align: left;
   font-size: 20px;
   color: #000;
   line-height: 22px;
@@ -57,10 +59,9 @@ h2,
 h3,
 h4,
 h5 {
-  padding:10px 5%;
+  padding: 10px 5%;
 
 }
-
 
 .date-text {
   font-style: italic;
@@ -95,13 +96,13 @@ a {
 .welcome-message {
   font-style: italic;
   font-size: 18px;
-  color: #f3f3f3;
+  color: #9aff69;
   line-height: 28px;
 }
 
 #skills-h3 {
   color: #f5ae23;
-  display: none;
+  //display: none;
 }
 
 .orange {
@@ -120,16 +121,23 @@ a {
 .gray {
   background-color: #f3f3f3;
   padding-bottom: 10px;
-  clear:both;
+  clear: both;
 }
 
 .dark-gray {
-  background-color: #4a4a4a;
+  background-color:#262424;
 }
 
 /* TODO: Replace with image later */
 #header {
   background-color: #484848;
+  box-shadow: 5px 5px 20px #ccc;
+  z-index: 1;
+}
+
+.main-data {
+  position :relative;
+  z-index :-1;
 }
 
 .flex-box {
@@ -161,6 +169,7 @@ ul {
   padding: 10px;
   width: 200px;
   display: none;
+  border-radius: 10%;
 }
 
 img {
@@ -173,13 +182,25 @@ span {
 
 #lets-connect {
   text-align: center;
+  color:	 	#4b0082;
+  box-shadow: 0px -10px 10px #ccc;
 }
 
 /* Media queries to handle various device widths */
 
+
+@media only screen and (min-width:1024px){
+  .main-data{
+    display :block;
+    width:1024px;
+    margin:0 auto;
+  }
+}
+
 @media only screen and (max-width: 1024px) {
   #lets-connect {
     margin-top: 5%;
+    box-shadow: 0px -10px 10px rgba(228, 192, 82, 0.66);
   }
 }
 
@@ -210,7 +231,15 @@ span {
 #mapDiv {
   height: 400px;
   width: 100%;
-  padding-bottom: 5%;
+  padding-bottom: 7%;
+}
+
+#projects img {
+   max-width: 400px;
+   width :100%;
+   border : 1px solid grey;
+   padding :5px;
+   border-radius:5px;
 }
 
 @media only screen and (min-width: 750px) {
